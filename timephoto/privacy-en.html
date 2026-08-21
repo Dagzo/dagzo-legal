@@ -22,7 +22,8 @@
 <ul><li>Shooting reminder settings (frequency, time, and so on)</li><li>Video generation settings (frame rate, resolution, and so on)</li><li>Display settings</li></ul>
 <h2>2. Why We Use Device Permissions</h2>
 <p>The App uses the following device permissions. Each is used only for the stated purpose.</p>
-<table><thead><tr><th>Permission</th><th>Purpose</th></tr></thead><tbody><tr><td>Camera</td><td>To take photos for fixed-point photography</td></tr><tr><td>Access to media (images)</td><td>To save and read the photos you take</td></tr><tr><td>Access to media (video)</td><td>To save and read the time-lapse videos you generate</td></tr><tr><td>Notifications</td><td>To send shooting reminders</td></tr><tr><td>Exact alarms</td><td>To schedule shooting reminders at the exact time</td></tr><tr><td>Run at startup</td><td>To restore shooting reminders after the device restarts</td></tr></tbody></table>
+<table><thead><tr><th>Permission</th><th>Purpose</th></tr></thead><tbody><tr><td>Camera</td><td>To take photos for fixed-point photography</td></tr><tr><td>Notifications</td><td>To send shooting reminders</td></tr><tr><td>Exact alarms</td><td>To schedule shooting reminders at the exact time</td></tr><tr><td>Run at startup</td><td>To restore shooting reminders after the device restarts</td></tr></tbody></table>
+<p>Importing photos from your gallery, and saving videos and comparison images to it, rely on Android&#x27;s photo picker and media store. Neither needs a photo or video access permission. The App reads only the photos you pick, and saves only the files it created itself.</p>
 <h2>3. Data Storage</h2>
 <ul><li>All data is stored only on the user&#x27;s device.</li><li>Photos and videos are stored in the App&#x27;s own storage area.</li><li>Records and photo information are stored in a local database (Room).</li><li>App settings are stored in DataStore.</li></ul>
 <h2>4. Data Sharing</h2>
