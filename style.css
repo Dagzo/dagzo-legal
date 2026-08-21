@@ -1,0 +1,85 @@
+/* 法的文書なので、読みやすさだけを優先する。装飾はつけない。 */
+:root {
+  --text: #1A1D21;
+  --muted: #5B6472;
+  --border: #E3E6EB;
+  --link: #1A5276;
+  --bg: #FFFFFF;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", sans-serif;
+  font-size: 16px;
+  line-height: 1.85;
+  -webkit-text-size-adjust: 100%;
+}
+
+main {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 40px 20px 80px;
+}
+
+h1 {
+  font-size: 27px;
+  line-height: 1.4;
+  margin: 0 0 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+}
+h2 { font-size: 20px; line-height: 1.5; margin: 44px 0 12px; }
+h3 { font-size: 16px; line-height: 1.6; margin: 28px 0 8px; color: var(--muted); }
+
+p  { margin: 0 0 16px; }
+ul, ol { margin: 0 0 20px; padding-left: 1.5em; }
+li { margin-bottom: 8px; }
+
+strong { font-weight: 700; }
+
+a { color: var(--link); }
+a:hover { text-decoration: none; }
+
+code {
+  background: #F3F5F7;
+  border-radius: 4px;
+  padding: 1px 5px;
+  font-size: .92em;
+}
+
+/* 表は狭い画面では横に送る。文字を縮めて読めなくするより素直 */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 24px;
+  font-size: 15px;
+  display: block;
+  overflow-x: auto;
+}
+th, td {
+  border: 1px solid var(--border);
+  padding: 10px 12px;
+  text-align: left;
+  vertical-align: top;
+  min-width: 7em;
+}
+th { background: #F7F8FA; font-weight: 600; white-space: nowrap; }
+
+.back {
+  margin-top: 56px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  font-size: 15px;
+}
+
+/* アプリ一覧（index）用 */
+.apps { list-style: none; padding: 0; }
+.apps li { margin-bottom: 28px; }
+.apps h2 { margin: 0 0 6px; font-size: 18px; }
+.apps .links a { margin-right: 18px; white-space: nowrap; }
+.lead { color: var(--muted); margin-bottom: 36px; }
+.contact { margin-top: 48px; font-size: 15px; color: var(--muted); }
